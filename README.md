@@ -25,10 +25,9 @@ Dependency Layer
 ```
 <br />
 
-
-### 1. Entities or Domain project
-
 ```nginx
+
+1. Entities or Domain project
 
       will have only about Entities or Domain
 
