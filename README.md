@@ -41,8 +41,10 @@ Dependency Layer
       unitofwork interfaces (ex IUnitOfWork)
       transaction interfaces (ex ITransaction)
       usecase implementation with internal access specifiers (ex internal class AuthorService)
-      expose only interfaces and composition root using public access specifiers (ex IAuthorService, RegistorService())
-      usecase implementation should have transactions implemented using IUnitOFWork and ITransaction interface
+      expose only interfaces and composition root using public access specifiers
+            (ex IAuthorService, RegistorService())
+      usecase implementation should have transactions implemented using IUnitOFWork
+             and ITransaction interface
 
 ```
 
