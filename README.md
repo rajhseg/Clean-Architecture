@@ -17,10 +17,9 @@ Dependency Layer
 
    UseCase --> Entities
 
-   Infrastructure --> UseCase
-                  --> Entities
+   Infrastructure --> Entities
 
-   Controller --> UseCase
+   Controller --> Refers UseCase only for Composition Root.
               --> Refers Infrastrucure only for Composition Root.
 
 ```
@@ -36,22 +35,22 @@ Dependency Layer
 
       Aggregate Root
 
+      will have infrastructure interfaces like Repository interfaces
+            (ex IRepository, IAuthorRepository)
+
+      unitofwork interfaces (ex IUnitOfWork)
+
+      transaction interfaces (ex ITransaction)
+
 ```
 
 ```nginx
 
 2. UseCase or Business Service project
 
-      will have infrastructure interfaces like Repository interfaces
-            (ex IRepository, IAuthorRepository)
-
       will have services interfaces (ex IEmailService)
 
       will have usecase interfaces (ex IAuthorService)
-
-      unitofwork interfaces (ex IUnitOfWork)
-
-      transaction interfaces (ex ITransaction)
 
       usecase implementation with internal access specifiers (ex internal class AuthorService)
 
@@ -60,6 +59,36 @@ Dependency Layer
 
       usecase implementation should have transactions implemented using IUnitOFWork
              and ITransaction interface
+
+         ```csharp
+
+        public async Task DeleteAuthor(int id)
+        {
+            if (default(int) == id)
+            {
+                throw new ArgumentNullException(nameof(id));
+            }
+
+            var author = await _authorRepository.GetById(id);
+
+            var trans = await _unitOfWork.BeginTransactionAsync();
+            try
+            {
+                await _authorRepository.Delete(author);
+                await _unitOfWork.CommitTransactionAsync(trans);
+            }
+            catch
+            {
+                await trans.RollbackAsync();
+                throw;
+            }
+            finally
+            {
+                await trans.DisposeAsync();
+            }
+        }
+
+         ```
 
 ```
 
