@@ -42,7 +42,7 @@ Dependency Layer
       transaction interfaces
       usecase implementation with internal access specifiers
       expose only interfaces and composition root using public access specifiers
-      usecase implementation should have transactions implemented with interface
+      usecase implementation should have transactions implemented using IUnitOFWork and ITransaction interface
 
 ```
 
