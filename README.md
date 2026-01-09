@@ -23,6 +23,7 @@ Dependency Layer
    UseCase --> Entities
 
    Infrastructure --> Entities
+                  --> UseCase
 
    Controller --> Refers UseCase only for Composition Root.
               --> Refers Infrastrucure only for Composition Root.
@@ -59,6 +60,8 @@ Dependency Layer
 
       will have usecase interfaces (ex IAuthorService)
 
+      will have External Services Contracts or interfaces (ex IPaymentServiceGateway or IAddressValidate)
+
       usecase implementation with internal access specifiers (ex internal class AuthorService)
 
       expose only interfaces and composition root using public access specifiers
@@ -81,6 +84,8 @@ Dependency Layer
       Should have implementation for UnitOfWork. (ex UnitOfWork)
 
       Should have implementation for Services. (ex EmailService)
+
+      Should have implementation for UseCase Interface. (ex PaymentServiceGateway or AddressValidate) 
 
       All the above four are with internal access specifiers.
 
