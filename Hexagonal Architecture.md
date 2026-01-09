@@ -19,7 +19,7 @@ Dependency Layer
 
    Entities
 
-   UseCaseExternalSystemInterfaces
+   UseCaseExternalSystemInterfaces (Ports)
 
    UseCase  --> Entities
             --> UseCaseExternalSystemInterfaces
