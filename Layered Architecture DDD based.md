@@ -21,6 +21,7 @@ Dependency Layer
    UseCase  --> Entities
 
    Infrastructure --> Entities
+                  --> UseCase
 
    Controller --> Refers UseCase only for Composition Root and IApplicationService.
               --> Refers Infrastrucure only for Composition Root.
@@ -48,11 +49,6 @@ Dependency Layer
 
       transaction interfaces (ex ITransaction)
 
-      will have External System Services interfaces (ex IEmailService)
-
-      will have External System Contracts or interfaces (ex IPaymentServiceGateway
-            or IAddressValidate)
-
 
 ```
 
@@ -71,6 +67,11 @@ Dependency Layer
 
       usecase (AuthorService) implementation should have transactions implemented
          using IUnitOFWork interface
+
+      will have External System Services interfaces (ex IEmailService)
+
+      will have External System Contracts or interfaces (ex IPaymentServiceGateway
+            or IAddressValidate)
 
 ```
 
