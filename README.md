@@ -87,7 +87,8 @@ Dependency Layer
 
       Should have implementation for Services. (ex EmailService)
 
-      Should have implementation for UseCase Interface. (ex PaymentServiceGateway or AddressValidate) 
+      Should have implementation for UseCase Interface. (ex PaymentServiceGateway
+            or AddressValidate) 
 
       All the above four are with internal access specifiers.
 
