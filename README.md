@@ -25,6 +25,11 @@ Dependency Layer
 ```
 <br />
 
+<img width="719" height="343" alt="image" src="https://github.com/user-attachments/assets/efc52030-25de-4482-96ab-37e5ff3bb78a" />
+
+
+<br />
+
 ```nginx
 
 1. Entities or Domain project
