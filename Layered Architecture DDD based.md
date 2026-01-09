@@ -2,9 +2,9 @@
 This repository is discuss about Layered architecture by using technology Asp.Net Core and Angular.
 Solution consists of following projects 
 
-1. Entities
-2. UseCase or BusinessService
-3. Infrastructure
+1. Entities or Domain
+2. UseCase or Application
+3. Infrastructure or DataAccess
 4. Controller
 
 Layered Architecture Dependency travels towards inwards
