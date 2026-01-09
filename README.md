@@ -12,11 +12,12 @@ Solution consists of following projects
 
 ```typescript
 
-Entities or Domain
-Ports (only for Hexagonal arch project)
-UseCase or BusinessService or Application Layer
-Infrastructure
-Controller
+1. Entities or Domain
+2. UseCase or BusinessService or Application Layer
+3. Infrastructure
+4. Controller
+
+5. Ports (only for Hexagonal arch project)
 
 ```
 
