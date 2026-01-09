@@ -5,7 +5,7 @@ Currently it have below items
 
 1. Layered Architecture
 2. Onion Architecture
-3. Hexagonal Architecure
+3. Hexagonal Architecture
 4. Clean Architecture
 
 Solution consists of following projects
@@ -21,9 +21,9 @@ Solution consists of following projects
 
 ```
 
-Architecures are differ based on the **RepositoryAndExternalSystems** Interfaces placed
+Architecture are differ based on the **RepositoryAndExternalSystems** Interfaces placed
 
-1. For **Layered** Architecure **Repository** Interfaces placed in **Domain layer**, **ExternalSystems** interfaces in **Application layer**.
+1. For **Layered** Architecture **Repository** Interfaces placed in **Domain layer**, **ExternalSystems** interfaces in **Application layer**.
 2. For **Hexagonal** Architecture **RepositoryAndExternalSystems** Interfaces placed in separate project as **Ports layer**.
 3. For **Clean** and **Onion** Archtecture **RepositoryAndExternalSystems** Interfaces is placed in **UseCase or Application layer**.
 
