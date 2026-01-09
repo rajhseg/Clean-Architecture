@@ -61,7 +61,8 @@ Dependency Layer
 
       will have usecase interfaces (ex IAuthorService)
 
-      will have External Services Contracts or interfaces (ex IPaymentServiceGateway or IAddressValidate)
+      will have External Services Contracts or interfaces (ex IPaymentServiceGateway
+            or IAddressValidate)
 
       usecase implementation with internal access specifiers (ex internal class AuthorService)
 
