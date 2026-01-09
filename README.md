@@ -2,8 +2,8 @@
 This repository is discuss about Clean architecture by using technology Asp.Net Core and Angular.
 Solution consists of following projects 
 1. Entities
-2. UseCase or BusinessService
-3. BusinessService.ExternalSystems.Contracts
+2. BusinessService.ExternalSystems.Contracts 
+3. UseCase or BusinessService
 4. Infrastructure
 5. Controller
 
