@@ -60,7 +60,7 @@ Dependency Layer
 
 ```nginx
 
-2. UseCase or Business Service project
+2. UseCase or Application project
 
       will have usecase interfaces (ex IAuthorService)
 
