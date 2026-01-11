@@ -25,7 +25,7 @@ Solution consists of following projects
 
 Architecture are differ based on the **RepositoryAndExternalSystems** Interfaces placed
 
-1. For **Layered** Architecture Repository Interfaces placed in $${\color{blue}Domain layer}$$ Domain layer, ExternalSystems interfaces in Application layer.
+1. For **Layered** Architecture Repository Interfaces placed in $${\color{blue}Domain}$$ $${\color{blue}layer$$, ExternalSystems interfaces in Application layer.
 2. For **Hexagonal** Architecture RepositoryAndExternalSystems Interfaces placed in separate project as Ports layer.
 3. For **Clean** and **Onion** Archtecture RepositoryAndExternalSystems Interfaces is placed in UseCase or Application layer.
 
