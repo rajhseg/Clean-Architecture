@@ -12,7 +12,7 @@ Hexagonal Architecture Dependency travels towards inwards
 
 <br />
 
-Dependency Layer
+$${\color{blue} Dependency }$$ $${\color{blue} layer }$$
 -----------------------
 
 ```nginx
