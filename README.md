@@ -1,4 +1,4 @@
-# $${\color{darkblue}Architecture}$$
+# ${\color{darkblue}Architecture}$
 
 This repository will discuss about the different architectures present in software.
 Currently it have below items
