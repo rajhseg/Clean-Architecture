@@ -23,7 +23,7 @@ Solution consists of following projects
 
 Architecture are differ based on the **RepositoryAndExternalSystems** Interfaces placed
 
-> [!NOTE]
+> [!IMPORTANT]
 > Highlights information that users should take into account, even when skimming.
 > 1. For **Layered** Architecture Repository Interfaces placed in $${\color{blue} Domain }$$ $${\color{blue} layer }$$, ExternalSystems interfaces in $${\color{blue} Application }$$ $${\color{blue} layer }$$.
 > 2. For **Hexagonal** Architecture RepositoryAndExternalSystems Interfaces placed in separate project as $${\color{blue} Ports }$$ $${\color{blue} layer }$$.
