@@ -1,4 +1,4 @@
-## Architecture
+# $\textsf{\color{darkblue}{Architecture}}$ 
 
 This repository will discuss about the different architectures present in software.
 Currently it have below items
@@ -21,11 +21,6 @@ Solution consists of following projects
 
 ```
 <br />
-<br />
-
-> [!IMPORTANT]
-> Below information that users should take into account.
->
 
 <br />
 Architecture are differ based on the **RepositoryAndExternalSystems** Interfaces placed
