@@ -44,7 +44,7 @@ Repository Interfaces
 
 ExternalSystems Interfaces
 
-5. IEmaiService
+5. IEmailService
 6. ILoggingService
 7. IPaymentService
 8. IExternalSystemInterfaces
